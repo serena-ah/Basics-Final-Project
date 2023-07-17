@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Travel Diary</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://aux.iconspalace.com/uploads/19471078591873747219.png"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(226, 240, 254) 0%,
+          rgb(255, 247, 228) 90%
+        );
+      }
+      ul {
+        list-style-type: none;
+        margin: 7px;
+      }
+      li {
+        display: inline-block;
+        margin: 0px 30px;
+      }
+
+      h1 {
+        font-size: 120px;
+        font-weight: 800;
+        font-family: "Architects Daughter", cursive;
+        text-align: center;
+        margin: 0px auto;
+        line-height: 1.5;
+        padding: 20px;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/596/original/IMG_2136_lasdr.jpg?1684574326");
+      }
+      h2 {
+        font-family: "Architects Daughter", cursive;
+        font-weight: bolder;
+        text-align: center;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      .intro {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 0px 100px 0px;
+      }
+
+      p {
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        line-height: 3;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        max-width: 500px;
+        margin-left: 40px;
+      }
+      .me {
+        max-width: 400px;
+        max-height: 300px;
+        margin: 10px 20px;
+        border-radius: 5px;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      .photo {
+        padding: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      .photo:hover {
+        background-color: #f9dddd;
+        opacity: 0.9;
+      }
+
+      button {
+        display: block;
+        margin: 50px auto;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        background-color: #f9dddd;
+        border-radius: 6px;
+        border: 2px solid rgb(241, 66, 241);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+        padding: 15px 30px;
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #dc8585;
+        color: #ffff;
+      }
+
+      span {
+        display: block;
+        text-align: center;
+        margin: 40px;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .footer {
+        text-align: center;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#me">me</a></li>
+      <li><a href="#travels">travels</a></li>
+      <li><a href="#more">...more</a></li>
+    </ul>
+    <hr />
+    <h1>
+      my <br />
+      travel <br />
+      diary
+    </h1>
+    <h2>A journey through images</h2>
+    <div class="intro" id="me">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/597/original/IMG_7713_resize.jpg?1684574517"
+        alt="photo of myself"
+        class="me"
+      />
+      <p>
+        Hi, I'm <strong>Serena</strong>! I'm originally from
+        <a href="https://en.wikipedia.org/wiki/Sardinia" target="_blank"
+          >Sardinia</a
+        >, Italy but I've been living in London for the last 8 years. Since
+        2017, my hobby has been travelling and so far I've been to 17 countries!
+        <br />
+        Here you can find some pictures from my travels, enjoy 🎈
+      </p>
+    </div>
+    <div class="row" id="travels">
+      <div class="photo">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/622/original/New_York.jpg?1684600775"
+          alt="New York photo"
+          width="400px"
+        />
+      </div>
+      <div class="photo">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/624/original/Indonesia.jpg?1684601181"
+          alt="Indonesia photo"
+          width="400px"
+        />
+      </div>
+      <div class="photo">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/623/original/Costa_RIca.jpg?1684600861"
+          alt="Costa Rica photo"
+          width="400px"
+        />
+      </div>
+      <div class="photo">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/625/original/Havana.jpg?1684601336"
+          alt="Cuba photo"
+          width="400px"
+        />
+      </div>
+      <div class="photo">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/630/original/Athens.jpg?1684603695"
+          alt="Athens photo"
+          width="400px"
+        />
+      </div>
+    </div>
+    <button id="more">Where to next?</button>
+    <span>Keep following for new destinations 🛬</span>
+    <div class="footer">
+      Coded by <em>Serena</em> ✨ <br />
+      All photos are mine ©
+    </div>
+    <script>
+      function suggestion() {
+        let name = prompt("What's your name?");
+        let place = prompt("Where should I go next?");
+        if (place === "italy" || place === "united kingdom") {
+          alert(`Thank you ${name}, I've been there already!😃`);
+        } else {
+          alert(
+            `Thank you ${name} for your suggestion, I'll look ${place} up!😃`
+          );
+        }
+        let thanksNote = document.querySelector("span");
+        thanksNote.innerHTML = `Thanks ${name} for visiting my page! 🤩`;
+      }
+      let suggestionButton = document.querySelector("button");
+      suggestionButton.addEventListener("click", suggestion);
+    </script>
+  </body>
+</html>
